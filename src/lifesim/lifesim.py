@@ -1,6 +1,8 @@
 # Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
 # Version v0.1-alpha
 from decimal import DivisionByZero
+class AyoUrFatBro(Exception):
+    pass
 class Person:
     def __init__ (self, name, height, weight, status = "alive", age = 0):
         self.fullname = name
@@ -20,7 +22,7 @@ class Person:
         self.weight = int(weight)+int(interval)
         if (self.weight > 69420):
             self.kill()
-            raise DivisionByZero()
+            raise AyoUrFatBro("ayo ur fat bro")
     def kill (self, newstat = "deceased"):
         self.stat = newstat
         print(f"Oops, {self.fname} is now dead. Have fun!")
