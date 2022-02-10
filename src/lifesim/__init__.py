@@ -10,15 +10,17 @@ class AyoUrShortBro(AyoUrExceptionallyExistent):
     pass
 class AyoUrOldBro(AyoUrExceptionallyExistent):
     pass
+class AyoKilledADeadGuy(AyoUrExceptionallyExistent):
+    pass
 class Person:
-    def __init__ (self, name, height, weight, age = 0, status = "alive"):
+    def __init__ (self, name, height, weight, age = 0, alive = True):
         self.fullname = name
         self.firstname = name.split(" ")[0]
         self.lastname = name.split(" ")[1]
         self.age = age
         self.height = height
         self.weight = weight
-        self.stat = status
+        self.alive = alive
     def ageup (self):
         self.age = int(self.age)+1
         if self.age >= 420:
@@ -38,6 +40,9 @@ class Person:
         if (self.weight > 69420):
             self.kill()
             raise AyoUrFatBro("ayo ur fat bro")
-    def kill (self, newstat = "deceased"):
-        self.stat = newstat
+    def kill (self):
+        if self.alive:
+            self.alive = False
+        else:
+            raise AyoKilledADeadGuy("AyoKilledADeadGuy")
         print(f"Oops, {self.fullname} is now dead. Have fun!")

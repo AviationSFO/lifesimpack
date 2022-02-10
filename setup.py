@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lifesimpack",
-    version="1.1.0",
+    name="lifesimpack-AviationSFO",
+    version="1.2dev1",
     author="Steven Weinstein",
     author_email="srw08sf@gmail.com",
     description="A life \'simulation\' package created as a joke.",
