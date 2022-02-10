@@ -2,6 +2,10 @@
 # Version v1.0.2
 class AyoUrFatBro(Exception):
     pass
+class AyoUrTallBro(Exception):
+    pass
+class AyoUrShortBro(Exception):
+    pass
 class Person:
     def __init__ (self, name, height, weight, status = "alive", age = 0):
         self.fullname = name
@@ -13,10 +17,16 @@ class Person:
         self.stat = status
     def ageup (self, age):
         self.age = int(age)+1
-    def grow (self, height = -20, interval = 1):
-        if (height == -20):
+    def grow (self, height = "-20", interval = 1):
+        if (height == "-20"):
             height=self.height
         self.height = int(height)+int(interval)
+        if self.height <= 0:
+            self.kill()
+            raise AyoUrShortBro("ayo ur short ngl")
+        if self.height >= 3421:
+            self.kill()
+            raise AyoUrTallBro("ayo ur kinda tall tbh")
     def enfatten (self, weight, interval = 1):
         self.weight = int(weight)+int(interval)
         if (self.weight > 69420):
