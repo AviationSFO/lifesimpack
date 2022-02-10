@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="lifesimpack-AviationSFO",
-    version="0.1-beta",
+    version="0.1.0",
     author="Steven Weinstein",
     author_email="private",
     description="A life \'simulation\' package created as a joke.",
