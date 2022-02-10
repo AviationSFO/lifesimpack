@@ -6,6 +6,8 @@ class AyoUrTallBro(Exception):
     pass
 class AyoUrShortBro(Exception):
     pass
+class AyoUrOldBro(Exception):
+    pass
 class Person:
     def __init__ (self, name, height, weight, status = "alive", age = 0):
         self.fullname = name
@@ -17,6 +19,9 @@ class Person:
         self.stat = status
     def ageup (self, age):
         self.age = int(age)+1
+        if self.age >= 420:
+            self.kill()
+            raise AyoUrOldBro("Wassup, old man, ur dead now")
     def grow (self, height = "-20", interval = 1):
         if (height == "-20"):
             height=self.height
