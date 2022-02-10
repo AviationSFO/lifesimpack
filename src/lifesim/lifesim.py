@@ -1,6 +1,5 @@
 # Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
-# Version v0.1-alpha
-from decimal import DivisionByZero
+# Version v0.1
 class AyoUrFatBro(Exception):
     pass
 class Person:
