@@ -24,4 +24,4 @@ class Person:
             raise AyoUrFatBro("ayo ur fat bro")
     def kill (self, newstat = "deceased"):
         self.stat = newstat
-        print(f"Oops, {self.fname} is now dead. Have fun!")
+        print(f"Oops, {self.fullname} is now dead. Have fun!")
