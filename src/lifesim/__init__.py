@@ -1,12 +1,14 @@
 # Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
 # Version v1.1.0
-class AyoUrFatBro(Exception):
+class AyoUrExceptionallyExistent(Exception):
     pass
-class AyoUrTallBro(Exception):
+class AyoUrFatBro(AyoUrExceptionallyExistent):
     pass
-class AyoUrShortBro(Exception):
+class AyoUrTallBro(AyoUrExceptionallyExistent):
     pass
-class AyoUrOldBro(Exception):
+class AyoUrShortBro(AyoUrExceptionallyExistent):
+    pass
+class AyoUrOldBro(AyoUrExceptionallyExistent):
     pass
 class Person:
     def __init__ (self, name, height, weight, age = 0, status = "alive"):
