@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="lifesimpack",
-    version="1.1.0-alpha",
+    version="1.1.0",
     author="Steven Weinstein",
     author_email="srw08sf@gmail.com",
     description="A life \'simulation\' package created as a joke.",
