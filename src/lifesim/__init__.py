@@ -1,5 +1,5 @@
 # Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
-# Version v1.1.0
+# Version v1.1.0-alpha
 class AyoUrFatBro(Exception):
     pass
 class AyoUrTallBro(Exception):
