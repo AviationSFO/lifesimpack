@@ -1,4 +1,4 @@
-# Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
+# Life simulator module for python by Steven Weinstein on 2-11-2022 (Py ver >= 3.6.0)
 import random
 class AyoUrExceptionallyExistent(Exception):
     pass
