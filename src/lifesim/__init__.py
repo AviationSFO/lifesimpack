@@ -1,4 +1,5 @@
 # Life simulator module for python by Steven Weinstein on 2-9-2022 (Py ver >= 3.6.0)
+import random
 class AyoUrExceptionallyExistent(Exception):
     pass
 class AyoUrFatBro(AyoUrExceptionallyExistent):
@@ -21,11 +22,17 @@ class Person:
         self.weight = weight
         self.health = health
         self.alive = alive
-    def ageup (self):
+    def ageup (self, possibledeath = False):
         self.age = int(self.age)+1
         if self.age >= 420:
             self.kill()
             raise AyoUrOldBro("Wassup, old man, ur dead now")
+        if possibledeath == True:
+            if self.age >= 65:
+                kill = 1
+                num = random.randint(0,25)
+                if kill == num:
+                    self.kill()
     def grow (self, interval = 1):
         height = self.height
         self.height = int(height)+int(interval)
