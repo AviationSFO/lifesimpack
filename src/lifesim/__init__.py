@@ -12,8 +12,6 @@ class AyoUrOldBro(AyoUrExceptionallyExistent):
     pass
 class AyoKilledADeadGuy(AyoUrExceptionallyExistent):
     pass
-class AyoDeadMansBDay(AyoUrExceptionallyExistent):
-    pass
 class Person:
     def __init__ (self, name, height, weight, age = 0, health = 100, alive = True):
         self.fullname = name
@@ -36,8 +34,6 @@ class Person:
                     num = random.randint(0,25)
                     if kill == num:
                         self.kill()
-        else:
-            raise AyoDeadMansBDay("Can\'t age up a dead person")
     def grow (self, interval = 1):
         height = self.height
         self.height = int(height)+int(interval)
